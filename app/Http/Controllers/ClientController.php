@@ -30,7 +30,7 @@ class ClientController extends Controller
 
     Client::create($validated);
 
-    return redirect()->route('clients.index')->with('success', 'Cliente criado com sucesso!');
+    return redirect()->route('clients.index')->with('Sucesso', 'Cliente criado com sucesso!');
     }
 
     public function show()
