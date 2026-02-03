@@ -4,4 +4,5 @@ PHP 8.2.12
 hosteado pelo artisan
 
 compose install #instalar dependencias do composo
+
 php artisan migrate #criar o banco pelo migrations (sem dados)
