@@ -14,11 +14,11 @@ return new class extends Migration
         Schema::create('clients', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->nome();
-            $table->documento();
-            $table->telefone();
-            $table->email();
-            $table->endereco();
+            $table->string('nome')->index();
+            $table->string('documento')->index();
+            $table->string('telefone')->index();
+            $table->string('email')->index();
+            $table->string('endereco')->index();
 
 
         });
