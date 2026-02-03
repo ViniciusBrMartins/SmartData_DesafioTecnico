@@ -49,7 +49,9 @@ class ClientController extends Controller
         $validated = $request->validate([
             'nome' => 'required',
             'documento' => 'required',
-            'email' => 'required'
+            'email' => 'required',
+            'telefone'=> 'nullable',
+            'endereco'=>'nullable'
         ]);
 
         $client = Client::findOrFail($id);
